@@ -5,7 +5,8 @@ import Button from '../Button/Button'
 function OptionalPanel(props) {
   return (
     <>
-        <TileSelector numTiles = {props.numTiles}/>
+        <TileSelector numTiles = {props.numTiles}
+        handleNumTileChange = {props.handleNumTileChange}/>
         <Button playing = {props.playing} startGame = {props.startGame}/>
     </>
   )
