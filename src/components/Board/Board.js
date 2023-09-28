@@ -5,7 +5,7 @@ import React from 'react'
 import './Board.css'
 
 function Board(props) {
-  const tileArray = props.tiles.map((tile) => <Tile {...tile} />);
+  let tileArray = props.tiles.map((tile) => <Tile {...tile} />);
 
   return (
   <div className='Board'>
